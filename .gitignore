@@ -1,0 +1,40 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+
+# ---- Virtual envs ----
+venv/
+.venv/
+env/
+
+# ---- macOS / IDE ----
+.DS_Store
+.idea/
+.vscode/
+
+# ---- Notebook checkpoints ----
+.ipynb_checkpoints/
+
+# ---- Run logs (reviewer regenerates via reproduce_*.sh) ----
+run_log*.txt
+nohup.out
+*.log
+
+# ---- Local cache ----
+.uci_cache/
+
+# ---- Experiment outputs (reviewer regenerates via reproduce_*.sh) ----
+# Comment out the next four lines if you want to ship a reference run.
+experiment_results/
+experiment_results_v1/
+experiment_results_v2_6tasks/
+visualizations/
+
+# ---- Data files we don't want to redistribute ----
+# (UCI Concrete is auto-downloaded by datasets_extra.py at runtime)
+*.xls
+*.xlsx
